@@ -27,7 +27,6 @@ const resetGame =()=>{
                 </div>`
     enablebox();
     winmassage.classList.add("hide");
-    console.log("click btn");
 }
 
 // function for Show winning massage 
@@ -46,16 +45,10 @@ const checkwin = () =>{
 
         if(position1 != "" && position2 != "" && position3 != ""){
             if(position1 === position2 && position2 === position3){
-                console.log("Winner",position1)
-                // masg.innerHTML=`<div class="game-info">
-                // <span class="info">Congrutions Winner is ${position1}</span>
-                // </div>`
                 disablebox();
                 showwinner(position1);
             }
-            else{
-                console.log("Game Over");
-            }
+           
         }
 
     }
@@ -82,9 +75,7 @@ boxes.forEach((box) =>{
                 //for player O
                 box.innerText ="O";
                 turnO = false;
-                console.log("turn for X.")
                 turn = changeTurn();
-                console.log("clicked.")
                 masg.innerHTML=`<div class="game-info">
                 <span class="info">Turn for X</span>
                 </div>`
@@ -93,8 +84,6 @@ boxes.forEach((box) =>{
                 // for player X
                 box.innerText ="X";
                 turnO = true;
-                console.log("turn for O.")
-                console.log("clicked.")
                 masg.innerHTML=`<div class="game-info">
                  <span class="info">Turn for O</span>
                 </div>`
