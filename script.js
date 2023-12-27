@@ -1,4 +1,4 @@
-console.log("welcome to tic tac toe")
+
 let resetBtn = document.querySelector("#reset");
 let newGameBtn = document.querySelector("#newgame-btn");
 let turn="x";
