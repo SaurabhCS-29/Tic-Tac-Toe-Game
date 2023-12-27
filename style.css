@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #3A3042;
+}
+
+.heading{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 55px;
+    font-weight:lighter;
+    color: #FF784F;
+    font-family: Rubik Doodle Shadow;
+    letter-spacing: 4px;
+}
+.win-massage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    height: 100px;
+}
+#massage{
+    font-size: 7vmin;
+    font-weight: lighter;
+    color: white;
+    letter-spacing: 4px;
+    font-family: Rubik Doodle Shadow;
+}
+.game-container{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50PX;
+}
+.container{
+    width: 300px;
+    /* display: grid;
+    grid-template-rows: repeat(3,10vmin);
+    grid-template-columns: repeat(3,10vmin);
+    gap: 30px 30px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    height: 90px;
+    width: 90px;
+    border-radius: 8px;
+    border: none;
+    margin: 5px;
+    background-color: #DB9D47;
+    color:white;
+    font-size: 60px;
+    font-weight: lighter;
+    font-family: Rubik Doodle Shadow;
+}
+
+.box:hover{
+    background-color: #d58001;
+    box-shadow: 3px 3px 8px #d49741;
+}
+.game-info{
+    margin-top: 30px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+}
+.info{
+    margin-top: 30px;
+    font-size: 20px;
+    color: white;
+    margin: 5px;
+}
+.Btn{
+    margin: 5px;
+    margin-left: 15px;
+    padding: 6px;
+    width: 110px;
+    border: none;
+    border-radius: 4px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #EDFFD9;
+}
+.Btn:hover{
+    border: 2px solid black;
+    background-color: #beec89;
+    box-shadow: 4px 4px 10px #EDFFD9;
+}
+
+.hide{
+    display: none;
+}
+
+@media (max-width:700px){
+    .heading{
+        font-size: 45px; 
+    }
+    .box{
+        height: 80px;
+        width: 80px;
+        font-size: 60px;
+    }
+}
